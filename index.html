@@ -11,36 +11,45 @@
             <a id="logo" href="index.html"><span class="R">R<span><span class="P">P</span><span class="S">S</span></a>
             <a id="aboutme" href="aboutme.html">About me</a>
         </header>
-    
+
+        <h1>A game of Rock Paper Scissors</h1>
+
         <section class="hero">
-            <h1>A game of Rock Paper Scissors</h1>
-            <div class="howto">Decide with what You want to beat your enemy and pick by clicking on one of the squares below.
-                Green mean you win
-                Red mean you loose
+
+            <div class="howto"><strong>Decide</strong> with what You want to beat your enemy and pick by clicking on one of the squares below.
+                Green mean you win<br>
+                Red mean you loose<br>
                 Yellow is a tie
             </div>
 
-            <img src="photo.jpg" alt="brain put on lipstick">
+            <img class="myimage" src="photo.jpg" alt="brain put on lipstick" height="200" width="200">
 
-            <div class="rules">Rock wins with Scissors
-                               Scissors win with Paper
-                               Paper with with Rock
-                               Same pick mean a tie
+            <div class="rules">
+                <ul>
+                    <li>Rock wins with Scissors</li>
+                    <li>Scissors win with Paper</li>
+                    <li>Paper with with Rock</li>
+                    <li>Same pick mean a tie</li>
+                </ul>
             </div>
 
         </section>
 
         <main>
 
-            <div class="buttons">
+            <div class="buttones">
             <button class="rock">Rock</button>
             <button class="paper">Paper</button>
             <button class="scissors">Scissors</button>
             </div>
 
-            <div class="answer">The computer chose `${randomPick}</div>
+            <div class="answer">The computer chose `${randomPick}` (You Win!! You Loose !!)</div>
 
-            <button class="restart">Restart to play again</button>
+            <div class="restart">
+            <button class="restart-btn">Restart to play again</button>
+            </div>
+
+
 
         </main>
 

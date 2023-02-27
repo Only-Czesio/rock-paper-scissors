@@ -1,0 +1,125 @@
+:root {
+    --main-bg-color : #1b646983;
+    --main-header-color : lightblue;
+    --main-btn-color : #ece7f7;
+    --main-btn-back-color : rgba(255,
+        0,
+        138,
+        0.5)
+}
+body {
+    background-color: var(--main-bg-color);
+}
+
+* {
+    margin : 0;
+}
+header {
+    display: flex;
+    border-bottom-left-radius: 135px;
+    border-bottom-right-radius: 155px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    background-color: var(--main-header-color);
+}
+header a {
+    margin: 15px;
+    text-decoration: none;
+}
+#logo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+}
+.R {
+    color: red;
+}
+.P {
+    color: purple;
+}
+.S {
+    color: seagreen;
+}
+
+#aboutme {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: oblique;
+    color: rosybrown;
+}
+h1 {
+    margin: 50px 0px 50px 0px;
+    text-align: center;
+}
+.hero {
+    display: flex;
+    flex-basis: auto;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+}
+.howto {
+    margin-top: 25px;
+    width: 15%;
+}
+.rules li {
+    margin-top: 25px;
+}
+@media screen and (max-width: 600px) {
+
+    .myimage {
+        display: none;
+    }
+    .howto {
+        width : 50%;
+    }
+}
+main {
+    display: flex;
+    flex-direction: column;
+}
+.buttones {
+    display: flex;
+    margin: 50px;
+    justify-content: center;
+    gap: 50px;
+    height: 50px;
+    flex-wrap: wrap;
+}
+button:hover {
+    background-color: pink;
+    cursor:grab;
+}
+button:active {
+    cursor:grabbing;
+}
+
+.rock, .paper, .scissors {
+    background-color: var(--main-btn-back-color);
+    border: none;
+    border-radius: 2em;
+    font-size: 35px;
+    color: var(--main-btn-color);
+}
+.answer {
+    text-align: center;
+    margin: 50px;
+}
+.restart {
+    display: flex;
+    justify-content: center;
+}
+.restart-btn {
+    background-color: #13064183;
+    padding: 25px;
+    text-align: center;
+    margin: 50px;
+    border: none;
+    border-radius: 2em;
+}
+footer {
+    text-align: center;
+    font-size: 15px;
+    background-color: var(--main-header-color);
+    border-top-right-radius: 135px;
+    border-top-left-radius: 135px;
+}
