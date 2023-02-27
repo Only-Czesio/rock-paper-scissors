@@ -64,6 +64,9 @@ h1 {
 .rules li {
     margin-top: 25px;
 }
+.myimage {
+    margin-right: 85px;
+}
 @media screen and (max-width: 600px) {
 
     .myimage {
@@ -97,7 +100,7 @@ button:active {
     cursor:grabbing;
 }
 
-.rock, .paper, .scissors {
+#rock, #paper, #scissors {
     width: 150px;
     background-color: var(--main-btn-back-color);
     border: none;
@@ -106,6 +109,8 @@ button:active {
     color: var(--main-btn-color);
 }
 .answer {
+    font-size: 35px;
+    color: crimson;
     text-align: center;
     margin: 50px;
 }
