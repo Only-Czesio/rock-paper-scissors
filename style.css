@@ -73,6 +73,10 @@ h1 {
         width : 50%;
     }
 }
+h2 {
+    margin: 25px;
+    text-align: center;
+}
 main {
     display: flex;
     flex-direction: column;
@@ -94,6 +98,7 @@ button:active {
 }
 
 .rock, .paper, .scissors {
+    width: 150px;
     background-color: var(--main-btn-back-color);
     border: none;
     border-radius: 2em;

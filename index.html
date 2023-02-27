@@ -25,15 +25,18 @@
             <img class="myimage" src="photo.jpg" alt="brain put on lipstick" height="200" width="200">
 
             <div class="rules">
+                <p>Rules :</p>
                 <ul>
                     <li>Rock wins with Scissors</li>
                     <li>Scissors win with Paper</li>
                     <li>Paper with with Rock</li>
-                    <li>Same pick mean a tie</li>
+                    <li>Same pick means a tie</li>
                 </ul>
             </div>
 
         </section>
+
+        <h2>Good Luck!</h2>
 
         <main>
 
@@ -43,13 +46,11 @@
             <button class="scissors">Scissors</button>
             </div>
 
-            <div class="answer">The computer chose `${randomPick}` (You Win!! You Loose !!)</div>
+            <div class="answer">The computer chose <span class="getRandom"></span> (You Win!! You Loose !!)</div>
 
             <div class="restart">
             <button class="restart-btn">Restart to play again</button>
             </div>
-
-
 
         </main>
 
@@ -63,6 +64,6 @@
             </address>
 
         </footer>
-
+        <script src="engine.js"></script>
 </body>
 </html>
