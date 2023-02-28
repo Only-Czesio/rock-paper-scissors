@@ -59,13 +59,12 @@ h1 {
 }
 .howto {
     margin-top: 25px;
+    font-size: 25px;
     width: 15%;
 }
 .rules li {
     margin-top: 25px;
-}
-.myimage {
-    margin-right: 85px;
+    font-size: 25px;
 }
 @media screen and (max-width: 600px) {
 
@@ -110,7 +109,7 @@ button:active {
 }
 .answer {
     font-size: 35px;
-    color: crimson;
+    color: rgb(0, 0, 0);
     text-align: center;
     margin: 50px;
 }
@@ -118,7 +117,7 @@ button:active {
     display: flex;
     justify-content: center;
 }
-.restart-btn {
+#restart-btn {
     background-color: #13064183;
     padding: 25px;
     text-align: center;
