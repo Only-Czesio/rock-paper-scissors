@@ -2,18 +2,20 @@
     --main-bg-color : #1b646983;
     --main-header-color : lightblue;
     --main-btn-color : #ece7f7;
-    --main-btn-back-color : rgba(255,
-        0,
-        138,
-        0.5)
+    --main-btn-back-color : rgba(255, 0, 138, 0.5);
 }
+
 body {
     background-color: var(--main-bg-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 * {
-    margin : 0;
+    margin: 0;
 }
+
 header {
     display: flex;
     border-bottom-left-radius: 135px;
@@ -23,21 +25,26 @@ header {
     padding: 25px;
     background-color: var(--main-header-color);
 }
+
 header a {
     margin: 15px;
     text-decoration: none;
 }
+
 #logo {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 45px;
     font-weight: bold;
 }
+
 .R {
     color: red;
 }
+
 .P {
     color: purple;
 }
+
 .S {
     color: seagreen;
 }
@@ -47,42 +54,55 @@ header a {
     font-style: oblique;
     color: rosybrown;
 }
+
 h1 {
     margin: 50px 0px 50px 0px;
     text-align: center;
 }
+
 .hero {
     display: flex;
     flex-basis: auto;
     justify-content: space-around;
-    /* flex-wrap: wrap; */
 }
+
 .howto {
     margin-top: 25px;
     font-size: 25px;
     width: 15%;
 }
+
 .rules li {
     margin-top: 25px;
     font-size: 25px;
 }
-@media screen and (max-width: 600px) {
 
+@media screen and (max-width: 600px) {
     .myimage {
         display: none;
     }
     .howto {
         width : 50%;
     }
+    .answer {
+        padding-top: 8rem;
+    }
+    .howto {
+        padding-left: 1rem;
+    }
 }
+
 h2 {
     margin: 25px;
     text-align: center;
 }
+
 main {
     display: flex;
     flex-direction: column;
+    flex-grow: 1; /* This line ensures that main takes up the remaining space */
 }
+
 .buttones {
     display: flex;
     margin: 50px;
@@ -91,10 +111,12 @@ main {
     height: 50px;
     flex-wrap: wrap;
 }
+
 button:hover {
     background-color: pink;
     cursor:grab;
 }
+
 button:active {
     cursor:grabbing;
 }
@@ -107,16 +129,19 @@ button:active {
     font-size: 35px;
     color: var(--main-btn-color);
 }
+
 .answer {
     font-size: 35px;
     color: rgb(0, 0, 0);
     text-align: center;
     margin: 50px;
 }
+
 .restart {
     display: flex;
     justify-content: center;
 }
+
 #restart-btn {
     background-color: #13064183;
     padding: 25px;
@@ -125,7 +150,9 @@ button:active {
     border: none;
     border-radius: 2em;
 }
+
 footer {
+    min-height: 25px;
     text-align: center;
     font-size: 15px;
     background-color: var(--main-header-color);
