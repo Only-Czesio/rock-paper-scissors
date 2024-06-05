@@ -74,6 +74,13 @@ h1 {
     .howto {
         width : 50%;
     }
+    .answer {
+        padding-top: 8rem;
+    }
+    .howto {
+        padding-left: 1rem;
+    }
+
 }
 h2 {
     margin: 25px;
